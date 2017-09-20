@@ -10,7 +10,7 @@ var articleone={
     heading:' Article one',
     content:' <p>hello</p>'
 };
-function createTemplate (date){
+function createTemplate (data){
         var title=data.title;
         var heading=data.heading;
         var htmlTemplate=`
