@@ -7,42 +7,33 @@ app.use(morgan('combined'));
 
 var articleone={
     title:'Article-one | Sai Sravya',
-    heading:' article one',
+    heading:' Article one',
     content:' <p>hello</p>'
 };
 function createTemplate (date){
         var title=data.title;
-        var heading=data.haeding;
+        var heading=data.heading;
         var htmlTemplate=`
         <html>
         <head>
         <title>
-        Article-one | Sai Sravya
+         ${tilte}
         </title>
          </head>
         <body>
             <h1>
-                article one
+                ${heading}
             </h1>
             <div>
                 <a href="/">Home</a>
             </div>
-            <p>hello</p>
+            ${content}
         
         </body>
          </html>
 `;
 return htmlTemplate;
 }
-
-
-
-
-
-
-
-
-
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
