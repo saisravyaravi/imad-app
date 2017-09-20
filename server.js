@@ -17,7 +17,7 @@ function createTemplate (data){
         <html>
         <head>
         <title>
-         ${tilte}
+         ${title}
         </title>
          </head>
         <body>
